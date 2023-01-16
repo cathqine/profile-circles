@@ -1,0 +1,37 @@
+body {
+    background: rgb(67, 81, 95);
+}
+
+* {
+    font-family: 'Fira sans', sans-serif;
+    font-size: small;
+}
+
+#outerbox {
+    width: 300px;
+    height: 450px;
+    background: rgb(121, 95, 83);
+    border-radius: 25px;
+    position: relative;
+    left: 25px; top: 25px;
+}
+#outerbox #innerbox {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin: auto;
+    border-radius: 25px;
+    border: 1.5px solid white;
+    top: 10px; left: 10px; right: 10px; bottom: 100px;
+}
+
+#outerbox #caption {
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    margin: auto;
+    background: rgb(214, 156, 167);
+    border-radius: 25px;
+    border: 3px solid black;
+    top: 360px; left: 10px; right: 10px; bottom: 100px;
+}
