@@ -5,11 +5,12 @@
     <title> welcome to catherine's space! </title>
     <link rel="stylesheet" href="main.css">
     <style>
-        img{
+        img {
             max-width: 100%;
             max-height: 100%;
             /* display: block; removes extra space below image */
-            border-radius: 25px;
+            /* border-radius: 25px; */
+            border-radius: 50%;
             object-fit: cover;
         }
     </style>
@@ -17,22 +18,92 @@
 <body>
     <!-- markup code -->
     <!-- boxes containing images and text -->
-    <div class="me">
-        <div id="outerbox">
-            <div style = "position:relative; left:20px; top:2px;">
-                intro to me (div was relatively positioned)
-            </div>
-            <div id="innerbox"> 
-                <a download="brakence.jpg" href="file:///Users/catherineliu/Desktop/mycode/mywebsite/brakence.jpeg" title="punk2brakence">
-                    <img alt="punk2brakence" src="file:///Users/catherineliu/Desktop/mycode/mywebsite/brakence.jpeg">
-                </a>
-            </div>
-            <div id="caption">
-                <div style = "position:relative; left:10px; top:2px;">
-                    meow (div was relatively positioned)
+    <div class="front-circle">
+        <div id="bgcircle"; style="position:relative; left:230px;">
+            <div class="me">
+                <!-- bubble for current favourite musical artist -->
+                <div style = "position: absolute; left: 900px;">
+                    <div class="bubbles"; style="color: rgb(255, 198, 219); font-size: 12px">
+                        <a href="https://open.spotify.com/album/6XV76W17coHAKFdeyiGT08?si=OvSnvqZAQnSdyMjqARKHfA" target="_blank" title="link to album on spotify">
+                            <img alt="hypochondriac album cover" src="https://i.scdn.co/image/ab67616d0000b27398f622b722bb7dea65ca0acf" width="140px">
+                        </a>
+                        <br>
+                        curr fave musical album
+                    </div>
+                </div>
+                <!-- main intro -->
+                <div id="outerbox"; style="position: relative; left:5px">
+                    <div id="innercircle"; style="position: relative; right: 20px">
+                        <a download="me.jpeg" title="art of myself">
+                            <img alt="art of myself..." src="file:///Users/catherineliu/Desktop/myart/me.jpeg">
+                        </a>
+                    </div>
+                    <div id="caption">
+                        <div class="caption"; style = "position: relative; left: 43px; top: 12px; color: rgb(255, 198, 219)">
+                            Catherine (˘-ω-˘͈)
+                        </div>
+                    </div>
+                    <!-- about me box -->
+                    <div id="flatbox"; style="position: relative; top: 250px; color: rgb(255, 198, 219)">
+                        <br>
+                        &nbsp;&nbsp;> about me:
+                        <br>
+                        &nbsp–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––-–––––––––––––
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ aries sun ✦ aries moon ✦ gemini rising 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ i have a 
+                        <a href="link/html-text-link.htm"; style="color: rgb(255, 198, 219); font-family: 'Helvetica', sans-serif; font-size: 17px;" > 
+                            guinea pig
+                        </a> named settie :heart:
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ my favourite colour is pink (as of recent)
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○ fun fact: i recently started learning how to play the guitar. the song i want to be able to 
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; play is called
+                        <a href="https://www.youtube.com/watch?v=9s1pKfhnywg"; target="blank_"; style="color: rgb(255, 198, 219); font-family: 'Helvetica', sans-serif; font-size: 17px;" > 
+                            rosier (by brakence)
+                        </a>
+                        
+                    </div>
+                </div>
+                <!-- bubble for social media -->
+                <div style = "position: relative; top: 100px; left: 600px;">
+                    <div class="bubbles">
+                        <!-- github -->
+                        <a href="https://github.com/cathqine" target="_blank" title="link to my github">
+                            <img alt="art of myself..." src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-9.png" width="60px" height="60px">
+                        </a>
+                        <br>
+                        <!-- instagram -->
+                        <a title="hover for discord tag" target="_blank" class="blink">
+                            <span class="one">
+                                <img alt="my instagram" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6cc3c481a15a141738_icon_clyde_white_RGB.png" width="40px">
+                            </span>
+                            <span class="two">
+                                vertigo#1652
+                            </span>
+                        </a>
+                        <br>
+                        <!-- spotify -->
+                        <a href="https://open.spotify.com/user/halty124.koricals" target="_blank" title="link to my spotify">
+                            <img alt="my instagram" src="https://www.citypng.com/public/uploads/small/11661570403whwxybsmx9s49gydvycyvydsof4sqok0xk0cisomyqi9tvzojomgsfwp1ffra1pqt5ndii64wnwpzmkqsvjr7wkuh3fpukvy2eki.png" width="43px" height="43px">
+                        </a>
+                    </div>
+                </div>
+                <!-- bubble for about me -->
+                <div style = "position: relative; right: 600px; bottom: 600px;">
+                    <div class="bubbles"; style="position: relative; color: rgb(255, 198, 219); font-size: 14px;">
+                            my creative works
+                        <a href="https://open.spotify.com/album/6XV76W17coHAKFdeyiGT08?si=OvSnvqZAQnSdyMjqARKHfA" target="_blank" title="link to album on spotify">
+                            <img alt="hypochondriac album cover" src="https://i.scdn.co/image/ab67616d0000b27398f622b722bb7dea65ca0acf" width="140px">
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
     </div>
+    
     
     <script src="main.js"></script>
 </body>

@@ -1,27 +1,64 @@
+:root {
+    /* --darkest: var(rgb(0, 44, 42)); */
+    --darkest: var(#002C2A);
+}
+
+.small {
+    font-size: 1.20em;
+}
+.caption {
+    font-size: 1.75em;
+}
+
 body {
-    background: rgb(67, 81, 95);
+    background: radial-gradient(rgb(7, 106, 101), #42488a);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 * {
-    font-family: 'Fira sans', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: small;
 }
 
+html {
+    height: 100%;
+}
+
+/* circles */
+/* task: create animation bubbles floating in the background just for display... */
+#bgcircle {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background:linear-gradient(to top, rgb(0, 44, 42), #42488a);
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* boxes */
 #outerbox {
     width: 300px;
     height: 450px;
-    background: rgb(121, 95, 83);
+    background:linear-gradient(to bottom, rgb(0, 44, 42), #42488a);
     border-radius: 25px;
     position: relative;
-    left: 25px; top: 25px;
+    left: 25px; top: 25px; bottom: 25px; right: 25px;
 }
-#outerbox #innerbox {
+
+#outerbox #innercircle {
     width: 250px;
     height: 250px;
     position: absolute;
     margin: auto;
-    border-radius: 25px;
-    border: 1.5px solid white;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
     top: 10px; left: 10px; right: 10px; bottom: 100px;
 }
 
@@ -30,8 +67,50 @@ body {
     height: 50px;
     position: absolute;
     margin: auto;
-    background: rgb(214, 156, 167);
+    background:linear-gradient(to top, rgb(0, 44, 42), #42488a);
     border-radius: 25px;
-    border: 3px solid black;
+    border: 1px solid black;
     top: 360px; left: 10px; right: 10px; bottom: 100px;
+}
+
+#outerbox #flatbox {
+    width: 700px;
+    height: 300px;
+    background: #151735;
+    border-radius: 25px;
+    position: relative;
+    right: 200px;
+    /* text inside box */
+    font-size: 17px;
+    border: 1px solid black;
+}
+
+/* circle containers */
+.bubbles {
+    /* circle itself */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 1.75em auto 0;
+    padding: 5%;
+    /* text inside circle */
+    font-size: 17px;
+    /* display: inline-block; */
+    color: #fff;
+    text-align: center;
+    line-height: 3;
+    background: linear-gradient(to top, rgb(160, 91, 129), #42488a);
+}
+
+/* specifically for discord tag reveal */
+.blink .two {
+    display: none
+}
+
+.blink:hover .one {
+    display: none
+}
+
+.blink:hover .two {
+    display: inline
 }
