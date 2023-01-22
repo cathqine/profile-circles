@@ -41,6 +41,19 @@ html {
     align-items: center;
 }
 
+#bgcircle #largebox {
+    width: 700px;
+    height: 550px;
+    background: #151735;
+    border-radius: 25px;
+    position: relative;
+    right: 200px;
+    /* text inside box */
+    font-size: 17px;
+    border: 1px solid rgb(109, 96, 186);
+    padding: 10px;
+}
+
 /* boxes */
 #outerbox {
     width: 300px;
@@ -95,12 +108,57 @@ html {
     padding: 5%;
     /* text inside circle */
     font-size: 17px;
-    /* display: inline-block; */
-    color: #fff;
+    color: pink;
     text-align: center;
     line-height: 3;
     background: linear-gradient(to top, rgb(160, 91, 129), #42488a);
 }
+
+.bubbles2 {
+     /* circle itself */
+     border-radius: 50%;
+     width: 400px;
+     height: 400px;
+     margin: 1.75em auto 0;
+     padding: 5%;
+     /* text inside circle */
+     font-size: 17px;
+     color: rgb(255, 198, 219);
+     text-align: center;
+     line-height: -1;
+     background: none;
+}
+
+.text {
+    font-size: 17px;
+    color: lavender;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: clip;
+    line-height: -1;
+    background: none;
+}
+
+/* other files (not index.html) boxes */
+#back {
+    width: 120px;
+    height: 35px;
+    background:linear-gradient(to bottom, rgb(0, 44, 42), #42488a);
+    border-radius: 25px;
+    border: 1px solid black;
+    /* text inside circle */
+    font-size: 17px;
+    color: rgb(255, 108, 228);
+    text-align: center;
+    line-height: 2.1;
+}
+
+#back:hover {
+    display: inline;
+    /* color: rgb(140, 181, 69); */
+    opacity: 0.8;
+}
+
 
 /* specifically for discord tag reveal */
 .blink .two {
