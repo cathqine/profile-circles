@@ -3,6 +3,39 @@
     --darkest: var(#002C2A);
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(rgb(7, 106, 101), #42488a);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+b {
+    color: rgb(236, 156, 185);
+    text-indent: 30px;
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+    font-weight: 900;
+}
+i {
+    color: rgb(224, 174, 255);
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'HelveticaNeue-Light', serif;
+}
+
 .small {
     font-size: 1.20em;
 }
@@ -10,21 +43,9 @@
     font-size: 1.75em;
 }
 
-body {
-    background: radial-gradient(rgb(7, 106, 101), #42488a);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
 * {
-    /* font-family: 'Helvetica', sans-serif; */
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
     font-size: small;
-}
-
-html {
-    height: 100%;
 }
 
 /* circles */
@@ -62,18 +83,21 @@ html {
     background:linear-gradient(to bottom, rgb(0, 44, 42), #42488a);
     border-radius: 25px;
     position: relative;
-    left: 25px; top: 25px; bottom: 25px; right: 25px;
+    left: 30px; top: 25px; bottom: 25px; right: 25px;
+    position: relative; 
+    
 }
 
 #outerbox #innercircle {
     width: 250px;
     height: 250px;
-    position: absolute;
     margin: auto;
     margin-left: 10px;
     border-radius: 50%;
     border: 1px solid black;
-    top: 10px; left: 10px; right: 10px; bottom: 100px;
+    top: 50px; left: 10px; right: 30px; bottom: 100px;
+    position: relative;
+    right: 20px; top: 40px"
 }
 
 #outerbox #caption {
@@ -87,17 +111,33 @@ html {
     top: 360px; left: 10px; right: 10px; bottom: 100px;
 }
 
+br {
+    content: "";
+    margin: 2em;
+    display: block;
+    font-size: 24%;
+}
+
+.text-style {
+    font-size: 1.4em;
+    color: rgb(224, 174, 255);
+    margin-left: 0.5em;
+}
+
 #outerbox #flatbox {
-    width: 680px;
+    width: 630px;
     height: 300px;
     background: #151735;
     border-radius: 25px;
     position: relative;
     right: 200px;
     /* text inside box */
-    font-size: 17px;
+    position: relative; 
+    top: 250px;
     border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* circle containers */
