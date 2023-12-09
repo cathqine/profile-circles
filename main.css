@@ -16,12 +16,25 @@ body {
     position: relative;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 100px;
+        padding: 100px;
+        background: radial-gradient(rgb(1, 0, 101), rgb(0, 0, 0));
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        /* Adjust font size for smaller screens */
+    }
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
     object-fit: cover;
 }
+
 b {
     color: rgb(236, 156, 185);
     text-indent: 30px;
@@ -29,6 +42,7 @@ b {
     font-family: 'Times New Roman', serif;
     font-weight: 900;
 }
+
 i {
     color: rgb(224, 174, 255);
     font-size: 16px;
@@ -39,6 +53,7 @@ i {
 .small {
     font-size: 1.20em;
 }
+
 .caption {
     font-size: 1.75em;
 }
@@ -49,12 +64,26 @@ i {
 }
 
 /* circles */
+#front-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 40em;
+    margin-left: -18em;
+    margin-bottom: 10em;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* task: create animation bubbles floating in the background just for display... */
 #bgcircle {
     position: relative;
     top: 50%;
-    left: 50%;
-    background:linear-gradient(to top, rgb(0, 44, 42), #42488a);
+    left: 230px;
+    background: linear-gradient(to top, rgb(0, 44, 42), #42488a);
     width: 1000px;
     height: 1000px;
     border-radius: 50%;
@@ -80,12 +109,15 @@ i {
 #outerbox {
     width: 300px;
     height: 450px;
-    background:linear-gradient(to bottom, rgb(0, 44, 42), #42488a);
+    background: linear-gradient(to bottom, rgb(0, 44, 42), #42488a);
     border-radius: 25px;
     position: relative;
-    left: 30px; top: 25px; bottom: 25px; right: 25px;
-    position: relative; 
-    
+    left: 30px;
+    top: 25px;
+    bottom: 25px;
+    right: 25px;
+    position: relative;
+
 }
 
 #outerbox #innercircle {
@@ -95,9 +127,14 @@ i {
     margin-left: 10px;
     border-radius: 50%;
     border: 1px solid black;
-    top: 50px; left: 10px; right: 30px; bottom: 100px;
+    top: 50px;
+    left: 10px;
+    right: 30px;
+    bottom: 100px;
     position: relative;
-    right: 20px; top: 40px"
+    right: 20px;
+    top: 40px"
+
 }
 
 #outerbox #caption {
@@ -105,10 +142,13 @@ i {
     height: 50px;
     position: absolute;
     margin: auto;
-    background:linear-gradient(to top, rgb(0, 44, 42), #42488a);
+    background: linear-gradient(to top, rgb(0, 44, 42), #42488a);
     border-radius: 25px;
     border: 1px solid black;
-    top: 360px; left: 10px; right: 10px; bottom: 100px;
+    top: 360px;
+    left: 10px;
+    right: 10px;
+    bottom: 100px;
 }
 
 br {
@@ -132,7 +172,7 @@ br {
     position: relative;
     right: 200px;
     /* text inside box */
-    position: relative; 
+    position: relative;
     top: 250px;
     border: 1px solid black;
     padding: 10px;
@@ -157,18 +197,18 @@ br {
 }
 
 .bubbles2 {
-     /* circle itself */
-     border-radius: 50%;
-     width: 400px;
-     height: 400px;
-     margin: 1.75em auto 0;
-     padding: 5%;
-     /* text inside circle */
-     font-size: 17px;
-     color: rgb(255, 198, 219);
-     text-align: center;
-     line-height: -1;
-     background: none;
+    /* circle itself */
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    margin: 1.75em auto 0;
+    padding: 5%;
+    /* text inside circle */
+    font-size: 17px;
+    color: rgb(255, 198, 219);
+    text-align: center;
+    line-height: -1;
+    background: none;
 }
 
 .text {
@@ -185,7 +225,7 @@ br {
 #back {
     width: 120px;
     height: 35px;
-    background:linear-gradient(to bottom, rgb(0, 44, 42), #42488a);
+    background: linear-gradient(to bottom, rgb(0, 44, 42), #42488a);
     border-radius: 25px;
     border: 1px solid black;
     /* text inside circle */
