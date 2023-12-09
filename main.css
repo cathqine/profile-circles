@@ -16,18 +16,6 @@ body {
     position: relative;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        margin: 100px;
-        padding: 100px;
-        background: radial-gradient(rgb(1, 0, 101), rgb(0, 0, 0));
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        position: relative;
-        /* Adjust font size for smaller screens */
-    }
-}
-
 img {
     max-width: 100%;
     max-height: 100%;
@@ -57,7 +45,6 @@ i {
 .caption {
     font-size: 1.75em;
     position: relative;
-    left: 55px;
     top: 10px;
     font-size: 25px;
     color: rgb(195, 155, 255);
@@ -77,7 +64,6 @@ i {
     margin-left: -18em;
     margin-bottom: 10em;
     padding: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,23 +97,35 @@ i {
 }
 
 /* boxes */
-#outerbox {
+#content {
     width: 300px;
     height: 450px;
-    background: linear-gradient(to bottom, rgb(0, 44, 42), #42488a);
-    border-radius: 25px;
-    position: relative;
     left: 30px;
     top: 25px;
     bottom: 25px;
     right: 25px;
     position: relative;
-
 }
 
-#outerbox #innercircle {
+
+#outbox {
+    width: 300px;
+    height: 450px;
+    background: linear-gradient(to bottom, rgb(0, 44, 42), #42488a);
+    border-radius: 25px;
+    /* position: relative;
+    left: 30px;
+    top: 25px;
+    bottom: 25px;
+    right: 25px;
+    position: relative; */
+}
+
+#innercircle {
     width: 250px;
     height: 250px;
+    display: flex;
+    justify-content: space-evenly;
     margin: auto;
     margin-left: 10px;
     border-radius: 50%;
@@ -142,7 +140,9 @@ i {
 
 }
 
-#outerbox #caption {
+#caption {
+    display: flex;
+    justify-content: center;
     width: 250px;
     height: 50px;
     position: absolute;
@@ -154,6 +154,7 @@ i {
     left: 10px;
     right: 10px;
     bottom: 100px;
+
 }
 
 br {
@@ -169,7 +170,7 @@ br {
     margin-left: 0.5em;
 }
 
-#outerbox #flatbox {
+#flatbox {
     width: 630px;
     height: 300px;
     background: #151735;
@@ -178,7 +179,7 @@ br {
     right: 200px;
     /* text inside box */
     position: relative;
-    top: 250px;
+    top: 35px;
     border: 1px solid black;
     padding: 10px;
     overflow-y: auto;
@@ -258,4 +259,44 @@ br {
 
 .blink:hover .two {
     display: inline
+}
+
+/* mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    body {
+        background: radial-gradient(#42488a, rgb(99, 99, 221));
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    #bgcircle {
+        background: radial-gradient(rgb(99, 99, 221), #42488a);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    #outbox {
+        display: none;
+    }
+
+    #caption {
+        width: 200px;
+        text-align: center;
+    }
+
+    #flatbox {
+        width: 440px;
+        height: 300px;
+        border-radius: 50px;
+        position: relative;
+        margin-left: 7em;
+        background-color: #42488a;
+        border-color: rgb(99, 99, 221);
+    }
+
+    .bubbles {
+        display: none;
+    }
 }
