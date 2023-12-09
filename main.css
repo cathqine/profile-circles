@@ -54,8 +54,13 @@ i {
     font-size: 1.20em;
 }
 
-.caption {
+.font-style {
     font-size: 1.75em;
+    position: relative;
+    left: 55px;
+    top: 10px;
+    font-size: 25px;
+    color: rgb(195, 155, 255);
 }
 
 * {
